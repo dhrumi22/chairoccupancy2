@@ -74,15 +74,18 @@ def Register():
 def userinfo():
     if request.method == 'POST':
         fname = request.form.get('fname')
-        email = request.form.get('email')
-        country = request.form.get('country')
+        lname = request.form.get('lname')
+        uname = request.form.get('uname')
+        gender = request.form.get('gender')
         password = request.form.get('password')
+        area = request.form.get('area')
+        branch = request.form.get('branch')
     connection = connect()
     cursor1 = connection.cursor()
 
     cursor1.execute(
-        "insert into register_db (FirstName, Email, Country, Password)"
-        " values ('{}','{}','{}','{}')".format(fname, email, country, password))
+        "insert into register_db (FirstName, LastName, UserName, Gender, Password, Area, Branch)"
+        " values ('{}','{}','{}','{}','{}','{}','{}')".format(fname, lname, uname, gender, password, area, branch))
 
     connection.commit()
     return render_template('admin/index.html')
