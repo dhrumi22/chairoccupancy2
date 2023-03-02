@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gleam Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../static/adminResources/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <style>
+        .hidetext {
+            width: 500px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+    <link rel="stylesheet" href="../../static/adminResources/css/custom.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../static/adminResources/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../static/adminResources/images/favicon.png"/>
+</head>
+
+<body>
+<div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+
+    {% include "admin/header.html" %}
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+        <!-- partial:partials/_sidebar.html -->
+
+        {% include "admin/menu.html" %}
+
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h3 class="page-title">
+                        Manage Feedbacks
+                    </h3>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Manage Feedbacks</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table id="order-listing" class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>User Name</th>
+                                            <th>Rating</th>
+                                            <th>Feedback</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Zeel</td>
+                                            <td>
+                                                <i class="mdi mdi-star lead"></i>
+                                                <i class="mdi mdi-star lead"></i>
+                                                <i class="mdi mdi-star lead"></i>
+                                                <i class="mdi mdi-star lead"></i>
+                                                <i class="mdi mdi-star lead"></i>
+                                            </td>
+                                            <td>
+                                                <div class="hidetext" data-custom-class="popover-info" data-toggle="popover" title=""
+                                                   data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                                                electronic typesetting, remaining essentially unchanged." data-original-title="Description" data-placement="left">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                                                    electronic typesetting, remaining essentially unchanged.
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <i class="mdi mdi-delete lead text-danger ml-2"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+
+            {% include "admin/footer.html" %}
+
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="../../static/adminResources/js/vendor.bundle.base.js"></script>
+<script src="../../static/adminResources/js/vendor.bundle.addons.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="../../static/adminResources/js/off-canvas.js"></script>
+<script src="../../static/adminResources/js/hoverable-collapse.js"></script>
+<script src="../../static/adminResources/js/misc.js"></script>
+<script src="../../static/adminResources/js/settings.js"></script>
+<script src="../../static/adminResources/js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page-->
+<script src="../../static/adminResources/js/data-table.js"></script>
+<!-- Custom js for this page-->
+<script src="../../static/adminResources/js/tooltips.js"></script>
+<script src="../../static/adminResources/js/popover.js"></script>
+<!-- End custom js for this page-->
+</body>
+
+</html>

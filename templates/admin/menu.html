@@ -1,0 +1,60 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/">
+                <i class="mdi mdi-home-outline menu-icon"></i>
+                <span class="menu-title">Home</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/viewUser" aria-expanded="false" aria-controls="sidebar-layouts">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+                <span class="menu-title">Manage User</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="maps">
+                <i class="mdi mdi-map-marker-radius menu-icon"></i>
+                <span class="menu-title">Manage Area</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="page-layouts">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="/addArea">Add Area</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/viewArea">View Area</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/viewBranch" aria-expanded="false" aria-controls="ui-basic">
+                <i class="mdi mdi-file-tree menu-icon"></i>
+                <span class="menu-title">Manage Branch</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/viewVideos" aria-expanded="false" aria-controls="ui-advanced">
+                <i class="mdi mdi-message-video menu-icon"></i>
+                <span class="menu-title">Manage Videos</span>
+                {#                <i class="menu-arrow"></i>#}
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/viewComplaints" aria-expanded="false" aria-controls="ui-advanced">
+                <i class="mdi mdi-headset menu-icon"></i>
+                <span class="menu-title">Manage Complaints</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/viewFeedbacks" aria-expanded="false" aria-controls="icons">
+                <i class="mdi mdi-thumb-up menu-icon"></i>
+                <span class="menu-title">Manage Feedbacks</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Login" aria-expanded="false" aria-controls="icons">
+                <i class="mdi mdi-logout menu-icon"></i>
+                <span class="menu-title">Logout</span>
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Gleam Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../static/adminResources/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../static/adminResources/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../static/adminResources/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../static/adminResources/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../static/adminResources/images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+
+      {% include "admin/header.html" %}
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial:partials/_sidebar.html -->
+
+        {% include "admin/menu.html" %}
+
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title">
+              Manage Area
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Manage Area</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table id="order-listing" class="table">
+                      <thead>
+                        <tr>
+                            <th>Area Name</th>
+                            <th>Area Pincode</th>
+                            <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>Edinburgh</td>
+                            <td>New York</td>
+                            <td>
+                                <a href="#">
+                                    <i class="mdi mdi-pencil lead"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="mdi mdi-delete lead text-danger ml-2"></i>
+                                </a>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+
+          {% include "admin/footer.html" %}
+
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../static/adminResources/js/vendor.bundle.base.js"></script>
+  <script src="../../static/adminResources/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="../../static/adminResources/js/off-canvas.js"></script>
+  <script src="../../static/adminResources/js/hoverable-collapse.js"></script>
+  <script src="../../static/adminResources/js/misc.js"></script>
+  <script src="../../static/adminResources/js/settings.js"></script>
+  <script src="../../static/adminResources/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../static/adminResources/js/data-table.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gleam Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../static/adminResources/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../../static/adminResources/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../static/adminResources/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../../static/adminResources/images/favicon.png"/>
+    <style>
+        .hidetext {
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+
+    {% include "admin/header.html" %}
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+        <!-- partial:partials/_sidebar.html -->
+
+        {% include "admin/menu.html" %}
+
+        <!-- partial -->
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h3 class="page-title">
+                        Manage Complaints
+                    </h3>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Manage Complaints</li>
+                        </ol>
+                    </nav>
+                </div>
+                x
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table id="order-listing" class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>User Name</th>
+                                            <th>Complaint Date</th>
+                                            <th>Complaint Subject</th>
+                                            <th>Complaint Description</th>
+                                            <th>Attachment</th>
+                                            <th>Status</th>
+                                            <th>Reply</th>
+                                            <th>Reply Date</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Zeel</td>
+                                            <td>07/01/2023</td>
+                                            <td>Regarding Sale</td>
+                                            <td>Sales recently are not boosting</td>
+                                            <td>
+                                                <label class="mdi mdi-attachment"></label>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-gradient-success badge-pill">Replied</div>
+                                            </td>
+                                            <td>
+                                                <div class="hidetext" data-custom-class="popover-info"
+                                                      data-toggle="popover" title="" data-content="Hi Zeel.
+                                                    The issue will be resolved quickly. We will get back to
+                                                    you as soon as possible."
+                                                      data-original-title="Description" data-placement="left">
+                                                    Hi Zeel.
+                                                    The issue will be resolved quickly. We will get back to
+                                                    you as soon as possible.
+                                                </div>
+                                            </td>
+                                            <td>10/01/2023</td>
+                                            <td>
+                                                <a href="#">
+                                                    <i class="mdi mdi-pencil lead"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="mdi mdi-delete lead text-danger ml-2"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dhrumi</td>
+                                            <td>18/01/2023</td>
+                                            <td>Service</td>
+                                            <td>Delayed Service</td>
+                                            <td>
+                                                <label class="mdi mdi-attachment"></label>
+                                            </td>
+                                            <td>
+                                                <div class="badge badge-gradient-warning badge-pill">Pending</div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-primary btn-icon-text">
+                                                    <i class="mdi mdi-reply btn-icon-prepend"></i>
+                                                    Reply
+                                                </button>
+                                            </td>
+                                            <td>-</td>
+                                            <td>
+                                                <a href="#">
+                                                    <i class="mdi mdi-pencil lead"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="mdi mdi-delete lead text-danger ml-2"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+
+            {% include "admin/footer.html" %}
+
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="../../static/adminResources/js/vendor.bundle.base.js"></script>
+<script src="../../static/adminResources/js/vendor.bundle.addons.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="../../static/adminResources/js/off-canvas.js"></script>
+<script src="../../static/adminResources/js/hoverable-collapse.js"></script>
+<script src="../../static/adminResources/js/misc.js"></script>
+<script src="../../static/adminResources/js/settings.js"></script>
+<script src="../../static/adminResources/js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page-->
+<script src="../../static/adminResources/js/data-table.js"></script>
+<!-- End custom js for this page-->
+<script src="../../static/adminResources/js/tooltips.js"></script>
+<script src="../../static/adminResources/js/popover.js"></script>
+</body>
+
+</html>
