@@ -88,7 +88,7 @@ def userinfo():
         " values ('{}','{}','{}','{}','{}','{}','{}')".format(fname, lname, uname, gender, password, area, branch))
 
     connection.commit()
-    return render_template('admin/index.html')
+    return render_template('admin/login.html')
 
 
 if __name__ == '__main__':
